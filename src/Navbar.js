@@ -60,7 +60,9 @@ const Navbar = () => {
 		return () => {
 			cleanup()
 		}
-	}, [])
+	}, []);
+
+	const applicationName = "Frame"
 
 	return (
 		<>
@@ -68,7 +70,7 @@ const Navbar = () => {
 				<AppBar position="static" className={classes.navbar}>
 					<Toolbar>
 						<Typography variant="h5" className={classes.title}>
-							Swiss
+							{applicationName}
 						</Typography>
 						<IconButton
 							aria-label="account of current user"
